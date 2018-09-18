@@ -15,5 +15,5 @@
   "devDependencies": {
     "mdx-deck": "^1.7.4"
   },
-  "name": "my-presentation-name"
+  "name": "navigation-as-code"
 }
