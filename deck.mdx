@@ -1,27 +1,111 @@
 import { Head } from 'mdx-deck'
-
+import { Split } from 'mdx-deck/layouts'
 export { default as theme } from './theme'
 
 <Head>
-  <title>In an Interface Builder empowered world: Navigation as Code</title>
+  <title>Navigation as Code</title>
 </Head>
 
-## X as Code
-### (from an iOS developer's perspective)
-#### In an Interface Builder empowered world: Navigation as Code
+## From Interface Builder
+## to Navigation as Code.
 
 ---
 
 ## Agenda
-
-- Storyboards
-- Coordinator pattern
-- RxFlow - the holy grail?
-- Takeaways
-
----
-
-<https://github.com/jxnblk/mdx-deck>
+* Storyboards
+* Rationale
+* Coordinator pattern
+* RxFlow
+* Takeaways
 
 ---
 
+## Storyboards
+
+Hands-on!
+
+---
+
+## Storyboards
+### Painpoints
+* Very slow slow Xcode (Interface Builder)
+* Storyboard References
+* Navigation flow hard to follow
+* Dependency injection / Additional properties
+* Still need boilerplate code
+* Merge conflicts or diffing is hard
+
+---
+
+## Storyboards
+
+Dozens of articles on medium on how to get rid of Storyboards.
+
+---
+
+## Rationale
+### X as Code
+
+X as code (XaC) is the process of configuring an X through machine-readable definition files rather than interactive configuration tools.
+
+---
+
+## Rationale
+### Navigation as Code
+
+Defining a non-linear Navigation Flow through an iOS App in pure code.
+
+---
+
+## Coordinator pattern
+
+![](coordinator.png)
+
+---
+
+## Coordinator pattern
+* Navigation / Interaction as code
+
+### Painpoints
+* No global navigation tracking
+* Boilerplate (each coordinator has to be written down)
+
+---
+
+## RxFlow
+
+![](rxflow.png)
+
+---
+
+## RxFlow
+### Notion
+* Flow: navigation area within our application, with a small independent and sealed scope
+* Step: some reachable navigation state (mostly views)
+* Stepper: entity which emits Steps (altering the navigation state)
+
+---
+
+## RxFlow
+### Advantages
+* Global navigation state (exposed with RxSwift Observables)
+* No more coordinators, only declare the navigation and the states it reacts to
+* No more delegation to let ViewModels communicate back with the Coordinator
+
+---
+
+## RxFlow
+
+Hands-on!
+
+---
+
+## Takeaways
+
+- 1
+- 2
+- 3
+
+---
+
+![](cheers.jpg)
