@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B562AD721526D3400952B5D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B562AD521526D3400952B5D /* RxSwift.framework */; };
+		4B562AD821526D3400952B5D /* RxFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B562AD621526D3400952B5D /* RxFlow.framework */; };
+		4B562ADC21526ED100952B5D /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B562ADB21526ED100952B5D /* RxCocoa.framework */; };
 		4BE7F7D5215269E800312F0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE7F7D4215269E800312F0E /* AppDelegate.swift */; };
 		4BE7F7D7215269E800312F0E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE7F7D6215269E800312F0E /* FirstViewController.swift */; };
 		4BE7F7D9215269E800312F0E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE7F7D8215269E800312F0E /* SecondViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B562AD521526D3400952B5D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		4B562AD621526D3400952B5D /* RxFlow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxFlow.framework; path = Carthage/Build/iOS/RxFlow.framework; sourceTree = "<group>"; };
+		4B562ADB21526ED100952B5D /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		4BE7F7D1215269E800312F0E /* RxFlowExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxFlowExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BE7F7D4215269E800312F0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4BE7F7D6215269E800312F0E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +37,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B562AD721526D3400952B5D /* RxSwift.framework in Frameworks */,
+				4B562AD821526D3400952B5D /* RxFlow.framework in Frameworks */,
+				4B562ADC21526ED100952B5D /* RxCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B562AD421526D3400952B5D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B562ADB21526ED100952B5D /* RxCocoa.framework */,
+				4B562AD621526D3400952B5D /* RxFlow.framework */,
+				4B562AD521526D3400952B5D /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4BE7F7C8215269E800312F0E = {
 			isa = PBXGroup;
 			children = (
 				4BE7F7D3215269E800312F0E /* RxFlowExample */,
 				4BE7F7D2215269E800312F0E /* Products */,
+				4B562AD421526D3400952B5D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,6 +97,7 @@
 				4BE7F7CD215269E800312F0E /* Sources */,
 				4BE7F7CE215269E800312F0E /* Frameworks */,
 				4BE7F7CF215269E800312F0E /* Resources */,
+				4B562ADA21526D8700952B5D /* Carthage Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +153,33 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4B562ADA21526D8700952B5D /* Carthage Copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxFlow.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+			);
+			name = "Carthage Copy Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxFlow.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RxCocoa.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4BE7F7CD215269E800312F0E /* Sources */ = {
@@ -288,6 +336,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SH56DW8F4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RxFlowExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,6 +358,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SH56DW8F4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = RxFlowExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
