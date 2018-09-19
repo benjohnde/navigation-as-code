@@ -12,5 +12,7 @@ import Foundation
 import RxFlow
 
 class DashboardViewModel: Stepper {
-
+    func showLogin() {
+        self.step.accept(AppStep.login)
+    }
 }

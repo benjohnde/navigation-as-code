@@ -12,11 +12,15 @@ import UIKit
 
 class DashboardViewController: UIViewController {
     var viewModel: DashboardViewModel!
+
+    @IBAction func loginButtonTouched(_ sender: Any) {
+        self.viewModel.showLogin()
+    }
 }
 
 extension DashboardViewController {
     class func instantiate(with viewModel: DashboardViewModel) -> DashboardViewController {
-        let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
         guard let viewController = storyboard.instantiateViewController(withIdentifier: "Dashboard") as? DashboardViewController else {
             fatalError()
         }

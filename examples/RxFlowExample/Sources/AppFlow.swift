@@ -22,14 +22,10 @@ class AppFlow: Flow {
     func navigate(to step: Step) -> NextFlowItems {
         guard let step = step as? AppStep else { return NextFlowItems.none }
         switch step {
-        case .launch:
+        case .dashboard:
             return navigateToDashboard()
         case .login:
-            return NextFlowItems.none
-        case .logout:
-            return NextFlowItems.none
-        case .dashboard:
-            return NextFlowItems.none
+            return navigateToLogin()
         }
     }
 }
@@ -38,6 +34,15 @@ extension AppFlow {
     private func navigateToDashboard() -> NextFlowItems {
         let viewModel = DashboardViewModel()
         let viewController = DashboardViewController.instantiate(with: viewModel)
+        self.rootViewController.pushViewController(viewController, animated: true)
+        return NextFlowItems.one(flowItem: NextFlowItem(nextPresentable: viewController, nextStepper: viewModel))
+    }
+}
+
+extension AppFlow {
+    private func navigateToLogin() -> NextFlowItems {
+        let viewModel = LoginViewModel()
+        let viewController = LoginViewController.instantiate(with: viewModel)
         self.rootViewController.pushViewController(viewController, animated: true)
         return NextFlowItems.one(flowItem: NextFlowItem(nextPresentable: viewController, nextStepper: viewModel))
     }

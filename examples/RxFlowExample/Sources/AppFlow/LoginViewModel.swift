@@ -1,4 +1,4 @@
-// AppStep.swift
+// LoginViewModel.swift
 //
 // - Authors:
 // Ben John
@@ -11,7 +11,8 @@
 import Foundation
 import RxFlow
 
-enum AppStep: Step {
-    case dashboard
-    case login
+class LoginViewModel: Stepper {
+    func dismiss() {
+        
+    }
 }

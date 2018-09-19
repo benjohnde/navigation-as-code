@@ -37,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         })
 
         // 3. point to the entry step
-        coordinator.coordinate(flow: appFlow, withStepper: OneStepper(withSingleStep: AppStep.launch))
+        coordinator.coordinate(flow: appFlow, withStepper: OneStepper(withSingleStep: AppStep.dashboard))
 
         return true
     }
