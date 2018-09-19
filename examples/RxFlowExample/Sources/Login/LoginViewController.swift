@@ -1,4 +1,4 @@
-// FirstViewController.swift
+// LoginViewController.swift
 //
 // - Authors:
 // Ben John
@@ -6,11 +6,11 @@
 // - Date: 19.09.18
 //
 // Copyright © 2018 Ben John. All rights reserved.
-    
+
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -10,10 +10,14 @@
 		4B562AD721526D3400952B5D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B562AD521526D3400952B5D /* RxSwift.framework */; };
 		4B562AD821526D3400952B5D /* RxFlow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B562AD621526D3400952B5D /* RxFlow.framework */; };
 		4B562ADC21526ED100952B5D /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B562ADB21526ED100952B5D /* RxCocoa.framework */; };
+		4B562ADE2152756F00952B5D /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B562ADD2152756F00952B5D /* AppFlow.swift */; };
+		4B562AE42152766B00952B5D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B562AE32152766B00952B5D /* LoginViewController.swift */; };
+		4B562AE62152767400952B5D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B562AE52152767400952B5D /* Login.storyboard */; };
+		4B562AE92152776200952B5D /* AppStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B562AE82152776200952B5D /* AppStep.swift */; };
+		4B562AEB21527B4D00952B5D /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B562AEA21527B4D00952B5D /* DashboardViewModel.swift */; };
 		4BE7F7D5215269E800312F0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE7F7D4215269E800312F0E /* AppDelegate.swift */; };
-		4BE7F7D7215269E800312F0E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE7F7D6215269E800312F0E /* FirstViewController.swift */; };
-		4BE7F7D9215269E800312F0E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE7F7D8215269E800312F0E /* SecondViewController.swift */; };
-		4BE7F7DC215269E800312F0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BE7F7DA215269E800312F0E /* Main.storyboard */; };
+		4BE7F7D7215269E800312F0E /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE7F7D6215269E800312F0E /* DashboardViewController.swift */; };
+		4BE7F7DC215269E800312F0E /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BE7F7DA215269E800312F0E /* Dashboard.storyboard */; };
 		4BE7F7DE215269E900312F0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4BE7F7DD215269E900312F0E /* Assets.xcassets */; };
 		4BE7F7E1215269E900312F0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BE7F7DF215269E900312F0E /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -22,11 +26,15 @@
 		4B562AD521526D3400952B5D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		4B562AD621526D3400952B5D /* RxFlow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxFlow.framework; path = Carthage/Build/iOS/RxFlow.framework; sourceTree = "<group>"; };
 		4B562ADB21526ED100952B5D /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		4B562ADD2152756F00952B5D /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
+		4B562AE32152766B00952B5D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4B562AE52152767400952B5D /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		4B562AE82152776200952B5D /* AppStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStep.swift; sourceTree = "<group>"; };
+		4B562AEA21527B4D00952B5D /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
 		4BE7F7D1215269E800312F0E /* RxFlowExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxFlowExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BE7F7D4215269E800312F0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4BE7F7D6215269E800312F0E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		4BE7F7D8215269E800312F0E /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		4BE7F7DB215269E800312F0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4BE7F7D6215269E800312F0E /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		4BE7F7DB215269E800312F0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Dashboard.storyboard; sourceTree = "<group>"; };
 		4BE7F7DD215269E900312F0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4BE7F7E0215269E900312F0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4BE7F7E2215269E900312F0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,10 +64,40 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4B562AE12152764400952B5D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4B562AE32152766B00952B5D /* LoginViewController.swift */,
+				4B562AE52152767400952B5D /* Login.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4B562AE22152764E00952B5D /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				4B562AEA21527B4D00952B5D /* DashboardViewModel.swift */,
+				4BE7F7D6215269E800312F0E /* DashboardViewController.swift */,
+				4BE7F7DA215269E800312F0E /* Dashboard.storyboard */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		4B562AE7215276E200952B5D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4BE7F7DD215269E900312F0E /* Assets.xcassets */,
+				4BE7F7DF215269E900312F0E /* LaunchScreen.storyboard */,
+				4BE7F7E2215269E900312F0E /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		4BE7F7C8215269E800312F0E = {
 			isa = PBXGroup;
 			children = (
-				4BE7F7D3215269E800312F0E /* RxFlowExample */,
+				4BE7F7D3215269E800312F0E /* Sources */,
+				4B562AE7215276E200952B5D /* Resources */,
 				4BE7F7D2215269E800312F0E /* Products */,
 				4B562AD421526D3400952B5D /* Frameworks */,
 			);
@@ -73,18 +111,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4BE7F7D3215269E800312F0E /* RxFlowExample */ = {
+		4BE7F7D3215269E800312F0E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				4B562AE12152764400952B5D /* Login */,
+				4B562AE22152764E00952B5D /* Dashboard */,
 				4BE7F7D4215269E800312F0E /* AppDelegate.swift */,
-				4BE7F7D6215269E800312F0E /* FirstViewController.swift */,
-				4BE7F7D8215269E800312F0E /* SecondViewController.swift */,
-				4BE7F7DA215269E800312F0E /* Main.storyboard */,
-				4BE7F7DD215269E900312F0E /* Assets.xcassets */,
-				4BE7F7DF215269E900312F0E /* LaunchScreen.storyboard */,
-				4BE7F7E2215269E900312F0E /* Info.plist */,
+				4B562ADD2152756F00952B5D /* AppFlow.swift */,
+				4B562AE82152776200952B5D /* AppStep.swift */,
 			);
-			path = RxFlowExample;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +182,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B562AE62152767400952B5D /* Login.storyboard in Resources */,
 				4BE7F7E1215269E900312F0E /* LaunchScreen.storyboard in Resources */,
 				4BE7F7DE215269E900312F0E /* Assets.xcassets in Resources */,
-				4BE7F7DC215269E800312F0E /* Main.storyboard in Resources */,
+				4BE7F7DC215269E800312F0E /* Dashboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,21 +223,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4BE7F7D9215269E800312F0E /* SecondViewController.swift in Sources */,
+				4B562AE42152766B00952B5D /* LoginViewController.swift in Sources */,
+				4B562ADE2152756F00952B5D /* AppFlow.swift in Sources */,
 				4BE7F7D5215269E800312F0E /* AppDelegate.swift in Sources */,
-				4BE7F7D7215269E800312F0E /* FirstViewController.swift in Sources */,
+				4B562AEB21527B4D00952B5D /* DashboardViewModel.swift in Sources */,
+				4BE7F7D7215269E800312F0E /* DashboardViewController.swift in Sources */,
+				4B562AE92152776200952B5D /* AppStep.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4BE7F7DA215269E800312F0E /* Main.storyboard */ = {
+		4BE7F7DA215269E800312F0E /* Dashboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				4BE7F7DB215269E800312F0E /* Base */,
 			);
-			name = Main.storyboard;
+			name = Dashboard.storyboard;
 			sourceTree = "<group>";
 		};
 		4BE7F7DF215269E900312F0E /* LaunchScreen.storyboard */ = {
@@ -340,7 +380,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = RxFlowExample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -362,7 +402,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = RxFlowExample/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
